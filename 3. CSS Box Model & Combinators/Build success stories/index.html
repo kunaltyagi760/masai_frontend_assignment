@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .top_heading {
+            display: flex;
+            background-color: rgb(239, 175, 175);
+            align-items: center;
+            justify-content: center;
+            padding: 4px;
+
+        }
+
+        .top_heading button {
+            background-color: red;
+            color: white;
+            padding: 8px;
+            margin: 4px 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .container>div {
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        .container>div>div {
+            margin: 4px;
+            padding: 6px;
+        }
+
+        .container>div>div:hover {
+            background-color: rgb(240, 229, 229);
+            color: red;
+        }
+
+        #btn1 {
+            color: blueviolet;
+            padding: 10px;
+            margin: 4px;
+            background-color: rgb(206, 224, 224);
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        #btn1:hover {
+            cursor: pointer;
+            background-color: rgb(141, 221, 221);
+
+        }
+
+        #btn2 {
+            color: red;
+            padding: 10px;
+            margin: 4px;
+            border: 1px solid red;
+            border-radius: 5px;
+
+        }
+
+        #btn2:hover {
+            cursor: pointer;
+            background-color: rgb(223, 214, 211);
+
+        }
+
+        .hr {
+            border: 1px solid rgb(227, 223, 223);
+        }
+
+        .home {
+            display: flex;
+            padding: 40px;
+            justify-content: space-between;
+        }
+
+        .home>img {
+            width: 40%;
+            height: 220px;
+        }
+
+        .home>div {
+            margin-right: 20px;
+        }
+
+        .home h1 {
+            color: rgb(80, 190, 234);
+            font-size: 50px;
+        }
+
+        .home h2 {
+            margin: 10px 0px;
+            font-weight: bold;
+        }
+
+        .home button {
+            background-color: red;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .impact {
+            background-color: rgb(3, 94, 94);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top_heading">
+        <p>Applications for our 6th November Batches are now open!</p>
+        <button>APPLY NOW</button>
+    </div>
+    <div class="container">
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png" alt="">
+        <div>
+            <div>COURSES</div>
+            <div>FEES</div>
+            <div>EVENTS</div>
+            <div>LEARN</div>
+            <div>SUCCESS STORIES</div>
+            <div>HIRE FROM US</div>
+        </div>
+        <div>
+            <button id="btn1">REFER & EARN</button>
+            <button id="btn2">SIGN UP</button>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="home">
+        <div>
+            <h1>Proof that dreams do come true</h1>
+            <h2>A testament to what’s possible</h2>
+            <button>APPLY NOW</button>
+        </div>
+        <img src="https://startupstorymedia.com/wp-content/uploads/2022/10/Masai-1.jpg" alt="">
+    </div>
+    <div class="impact">
+            <h1>How is Masai Creating an Impact?</h1>
+            <p>4000+ students placed across 1000+ companies</p>
+    </div>
+</body>
+
+</html>
