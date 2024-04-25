@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .container>div {
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        .container>div>div {
+            margin: 4px;
+            padding: 6px;
+        }
+
+        .container>div>div:hover {
+            background-color: rgb(240, 229, 229);
+            color: red;
+        }
+
+        #btn1 {
+            color: blueviolet;
+            padding: 10px;
+            margin: 4px;
+            background-color: rgb(206, 224, 224);
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        #btn1:hover {
+            cursor: pointer;
+            background-color: rgb(141, 221, 221);
+
+        }
+
+        #btn2 {
+            color: red;
+            padding: 10px;
+            margin: 4px;
+            border: 1px solid red;
+            border-radius: 5px;
+
+        }
+
+        #btn2:hover {
+            cursor: pointer;
+            background-color: rgb(223, 214, 211);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png" alt="">
+        <div>
+            <div>COURSES</div>
+            <div>FEES & ISA</div>
+            <div>ABOUT US</div>
+            <div>HIRE FROM US</div>
+            <div>FAQ</div>
+            <div>EVENTS</div>
+            
+        </div>
+        <div>
+            <button id="btn1">REFER & EARN</button>
+            <button id="btn2">LOGIN</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
