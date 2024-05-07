@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50%;
+            margin: auto;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 150px);
+            background-color: rgb(146, 100, 146);
+        }
+        .container > div{
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+        .container > div:first-child{
+            background-color: orangered;
+        }
+        .container > div:nth-child(2){
+            background-color: green;
+        }
+        .container > div:nth-child(3){
+            background-color: wheat;
+        }
+        .container > div:nth-child(4){
+            background-color: blue;
+        }
+        .container > div:nth-child(5){
+            background-color: brown;
+        }
+        .container > div:last-child{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>4</div>
+        <div>2</div>
+        <div>6</div>
+        <div>1</div>
+        <div>5</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
