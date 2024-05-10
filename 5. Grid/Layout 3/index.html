@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 50%;
+            height: 400px;
+            display: grid;
+            padding: 10px;
+            gap: 20px 10px;
+            grid-template-areas: 
+            "four four six"
+            "one five six"
+            "seven seven seven"
+            ;
+            background-color: rgb(146, 100, 146);
+        }
+        .container > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+        .four{
+            background-color: orangered;
+            grid-area: four;
+        }
+        .two{
+            background-color: green;
+            grid-area: two;
+        }
+        .six{
+            background-color: wheat;
+            grid-area: six;
+        }
+        .one{
+            background-color: blue;
+            grid-area: one;
+        }
+        .five{
+            background-color: brown;
+            grid-area: five;
+        }
+        .three{
+            background-color: yellow;
+            grid-area: three;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        
+    </div>
+</body>
+</html>
