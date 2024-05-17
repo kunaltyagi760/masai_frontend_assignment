@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "logo logo logo card card card card"
+            "copy copy copy copy copy copy copy";
+            
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(7, 7, 117);
+            padding: 20px 40px;
+            grid-area: logo;
+        }
+        .logo > img{
+            width: 200px;
+            height: 200px
+        }
+        .card{
+            background-color: rgb(77, 77, 189);
+            display: flex;
+            color: white;
+            justify-content: space-between;
+            grid-area: card;
+            line-height: 30px;
+            padding: 20px;
+        }
+        .card h3{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .card p{
+            font-weight: 100;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .copy{
+            background-color: rgb(56, 55, 55);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            grid-area: copy;
+        }
+        @media all and (min-width:480px) and (max-width: 830px){
+            .container{
+                grid-template-areas:
+                "card card card card"
+                "logo logo logo logo"
+                "copy copy copy copy";
+            }
+        }
+        @media all and (min-width:100px) and (max-width: 480px){
+            .container{
+                grid-template-areas:
+                "copy"
+                "card"
+                "logo";
+            }
+            .card{
+                flex-direction: column;
+                align-items: start;
+            }
+            .card > div {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/9ef3a632344559.Y3JvcCw4MjEsNjQyLDE4OSwxMDE.jpg" alt="">
+        </div>
+        <div class="card">
+            <div class="shop1">
+                <h3>Shop</h3>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+            </div>
+            <div class="sell">
+                <h3>Sell</h3>
+                <p>Sell on easy</p>
+                <p>Sell on easy</p>
+                <p>Sell on easy</p>
+                <p>Sell on easy</p>
+            </div>
+            <div class="about">
+                <h3>About</h3>
+                <p>Etsy,Inc.</p>
+                <p>Etsy,Inc.</p>
+                <p>Etsy,Inc.</p>
+                <p>Etsy,Inc.</p>
+                <p>Etsy,Inc.</p>
+                <p>Etsy,Inc.</p>
+                <p>Etsy,Inc.</p>
+            </div>
+            <div class="shop2">
+                <h3>Shop</h3>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+                <p>Gift Cards</p>
+            </div>
+        </div>
+        <div class="copy"><p>©2024Etsy,Inc.</p></div>
+    </div>
+</body>
+</html>
