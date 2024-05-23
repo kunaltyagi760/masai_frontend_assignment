@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prosto+One&family=Shojumaru&family=Ubuntu&family=ZCOOL+KuaiLe&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 1320px;
+            margin: auto;
+            margin-top: 136px;
+        }
+        .container > div:first-child{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container > div > p:first-child{
+            font-family: Inter;
+            font-size: 29.88px;
+            font-weight: 700;
+            line-height: 45px;
+            text-align: left;
+            padding: 5px 15px;
+        }
+        .container > div > p:nth-child(2){
+            font-family: Inter;
+            font-size: 14.3px;
+            font-weight: 400;
+            text-align: end;
+            padding: 21px 40px 40px 0px;
+        }
+        .container > div:nth-child(2){
+            display: flex;
+            gap: 30px
+        }
+        .frame1{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-left: 15px;
+
+        }
+        .frame2{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-right: 15px;
+        }
+        .frame2 > div:nth-child(2){
+            display: flex;
+            gap: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p>Popular things to do</p>
+            <p>See all</p>
+        </div>
+        <div>
+            <div class="frame1">
+                <img src="https://i.ibb.co/VDYnTsv/Link.png" alt="">
+                <img src="https://i.ibb.co/WHKrYhY/Link-1.png" alt="">
+            </div>
+            <div>
+                <img src="https://i.ibb.co/yR7Y6D5/Link-2.png" alt="">
+            </div>
+            <div class="frame2">
+                <div><img src="https://i.ibb.co/02w01ZM/Link-3.png" alt=""></div>
+                <div>
+                    <img src="https://i.ibb.co/wLv0zJP/Link-4.png" alt="">
+                    <img src="https://i.ibb.co/5FDbVF5/Link-5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
